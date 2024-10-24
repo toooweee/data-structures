@@ -11,7 +11,9 @@ public class stack {
          *         pop() to remove from the top
          */
 
-        Stack<String> stack = new Stack<String>();
+        Stack<String> stack = new Stack<>();
+
+        System.out.println(stack.empty());
 
         stack.push("Minecraft");
         stack.push("Skyrim");
@@ -19,8 +21,9 @@ public class stack {
         stack.push("Borderlands");
         stack.push("FFVII");
 
-        for(int i = 0; i < 10000000; i++) {
-            stack.push("Fallout 76");
-        }
+        String firstGame = stack.peek();
+        System.out.println(firstGame);
+
+        System.out.println(stack);
     }
 }
